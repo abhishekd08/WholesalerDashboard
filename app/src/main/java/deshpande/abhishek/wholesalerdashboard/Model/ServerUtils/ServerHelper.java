@@ -8,10 +8,11 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import deshpande.abhishek.wholesalerdashboard.GeneralUtils.Callbacks.JsonObjectRequestCallback;
+import deshpande.abhishek.wholesalerdashboard.GeneralUtils.Callbacks.SimpleCallback;
 
 public class ServerHelper {
 
-    public void sendFirebaseTokenToServer(String token) {
+    public void sendFirebaseTokenToServer(String token, SimpleCallback callback) {
         try {
             JSONObject headers = new JSONObject();
             //TODO create headers
